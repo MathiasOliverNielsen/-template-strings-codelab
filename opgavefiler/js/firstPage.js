@@ -9,6 +9,26 @@ document.getElementById('message').innerHTML = besked;
 /* Opgave 2*/
 
 // din kode her
+const myData = [
+  { navn: 'T-shirt', beskrivelse: 'En t-shirt lavet af bomuld', pris: 99 },
+  { navn: 'Jeans', beskrivelse: 'Blå denim jeans med straight fit', pris: 299 },
+  { navn: 'Hættetrøje', beskrivelse: 'En grå hættetrøje med lynlås', pris: 199 },
+];
+if (!document.getElementById('produktListe')) {
+  const produktListe = document.createElement('div');
+  produktListe.id = 'produktListe';
+  document.body.appendChild(produktListe);
+}
+const produktListe = document.getElementById('produktListe');
+let html = '';
+myData.forEach((produkt) => {
+  html += `<div class="produkt">
+    <h3>${produkt.navn}</h3>
+    <p>${produkt.beskrivelse}</p>
+    <p>Pris: ${produkt.pris} kr.</p>
+  </div>`;
+});
+produktListe.innerHTML = html;
 
 /* Opgave 3 - skriv videre på koden her: */
 
