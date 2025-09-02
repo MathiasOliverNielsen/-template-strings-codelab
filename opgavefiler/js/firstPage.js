@@ -1,6 +1,10 @@
 /* Opgave 1*/
 
 // din kode her
+const navn = 'Keld';
+const aar = 3;
+const besked = `<h2>Hej ${navn}</h2> du har nu arbejdet i vores virksomhed i ${aar} år.`;
+document.getElementById('message').innerHTML = besked;
 
 /* Opgave 2*/
 
