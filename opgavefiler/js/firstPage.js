@@ -12,8 +12,9 @@ document.getElementById('message').innerHTML = besked;
 const myData = [
   { navn: 'T-shirt', beskrivelse: 'En t-shirt lavet af bomuld', pris: 99 },
   { navn: 'Jeans', beskrivelse: 'Blå denim jeans med straight fit', pris: 299 },
-  { navn: 'Hættetrøje', beskrivelse: 'En grå hættetrøje med lynlås', pris: 199 },
+  { navn: 'Hættetrøje', beskrivelse: 'En grå hættetrøje med lynlås', pris: 200 },
 ];
+//Not needed
 if (!document.getElementById('produktListe')) {
   const produktListe = document.createElement('div');
   produktListe.id = 'produktListe';
